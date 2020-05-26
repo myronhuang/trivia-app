@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - A Pen by  Myron Huang</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link href="https://fonts.googleapis.com/css?family=Lato:400,700" rel="stylesheet"><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container">
+
+
+  <div class="squiggle-container">
+    <img class="squiggle" src="./assets/squiggle.svg" />
+  </div>
+
+  
+  <div class="question-display-box-wrapper">
+    <img class="question-display-box" src="./assets/question-box.svg"/>
+    <div id="question"></div>
+  </div>
+
+
+  <div id="optionContainer">
+
+    <div class="hidden option-container">
+      <img class="answer-box-1" src="./assets/answer-box.svg" />
+      <div class="option"> </div>
+    </div>
+
+    <div class="hidden option-container">
+      <img class="answer-box-1" src="./assets/answer-box.svg" />
+      <div class="option"> </div>
+    </div>
+
+    <div class="hidden option-container">
+      <img class="answer-box-1" src="./assets/answer-box.svg" />
+      <div class="option"> </div>
+    </div>
+
+    <div class="hidden option-container" disabled=true>
+      <img class="answer-box-1" src="./assets/answer-box.svg" />
+      <div class="option"></div>
+    </div>
+
+  </div>
+
+  <div id="new-question-button-wrapper">
+    <img class="new-question-button-container" src="./assets/button.svg" />
+    <button id="nextQ">New Question!</button>
+  </div>
+  
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,138 @@
+html,
+body {
+  box-sizing: border-box;
+  font-family: Lato, sans-serif;
+  height: 800px;
+  padding: 0;
+  margin: 0;
+}
+
+
+body {
+  /* background-size: 40px 40px;
+  background-image:
+    linear-gradient(to right, grey 1px, transparent 1px),
+    linear-gradient(to bottom, grey 1px, transparent 1px); */
+
+    background: url("./assets/Asset\ 18.svg") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 0px;
+}
+
+
+.question-display-box-wrapper {
+  width: 300px;
+  position: relative;
+  text-align: center;
+}
+
+.question-display-box {
+  width: 100%
+}
+
+#question {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#optionContainer {
+  width: 500px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 50px 0 20px 0;
+}
+
+.option-container {
+  position: relative;
+  text-align: center;
+  width: 300px;
+  height: 100px;
+}
+
+.option-container:hover {
+  cursor: pointer;
+}
+
+.answer-box-1 {
+  width: 100%;
+}
+
+.option {
+  position: absolute;
+  top: 35%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: none;
+}
+
+#new-question-button-wrapper {
+  width: 150px;
+  position: relative;
+  text-align: center;
+}
+
+.new-question-button-container {
+  width: 100%;
+}
+
+
+#nextQ {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: none;
+  background: transparent;
+  font-family: Lato, sans-serif;
+}
+
+#nextQ:focus {
+  outline: none;
+}
+
+#nextQ:hover {
+  cursor: pointer;
+}
+
+#new-question-button-wrapper:hover {
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.hidden {
+  display: none;
+}
+
+.selectable-answer {
+  display: block;
+}
+
+.incorrect {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.correct {
+  opacity: 1;
+  color: white;
+  pointer-events: none;
+}
+
+.pressed {
+  top:  45%;
+}
