@@ -66,6 +66,7 @@ body {
 
 .option-container:hover {
   cursor: pointer;
+  opacity: 0.8;
 }
 
 .answer-box-1 {
@@ -111,7 +112,7 @@ body {
 
 #new-question-button-wrapper:hover {
   cursor: pointer;
-  opacity: 0.6;
+  opacity: 0.8;
 }
 
 .hidden {
@@ -135,4 +136,8 @@ body {
 
 .pressed {
   top:  46%;
+}
+
+.pushed {
+  padding-top: 10px;
 }

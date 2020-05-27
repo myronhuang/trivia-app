@@ -15,6 +15,16 @@ let incorrectAnswers;
 
 nextQuestion.addEventListener("click", getNextQuestion);
 
+nextQuestion.addEventListener("mousedown", () => {
+  nextQuestion.children[0].src = './assets/next-question-button-pressed.svg';
+  nextQuestion.children[1].classList.add('pushed');
+});
+
+nextQuestion.addEventListener("mouseup", () => {
+  nextQuestion.children[0].src = './assets/next-question-button.svg';
+  nextQuestion.children[1].classList.remove('pushed');
+});
+
 option_containers.forEach(container => {
   container.addEventListener("mousedown", () => {
     container.children[0].src = "./assets/button-pressed.svg";
@@ -63,18 +73,12 @@ function getQA() {
     shuffleArray(answerArray);
     //loop through option divs
     for(let i = 0; i < answerArray.length; i++) {
-      //if answer exists
-      // if(answerArray[i]) {
-        // options[i].style.background = "white";
-        // options[i].style.opacity = "1";
-        // options[i].style.border = "2px solid black";
 
         //remove hidden class and add selectable-answer class, make divs visible
         option_containers[i].classList.remove("hidden");
         option_containers[i].classList.add("selectable-answer");
         options[i].innerHTML = answerArray[i];
-      // } else {
-        // options[i].classList.add("selectable-answer");
+
     }
      
   })
