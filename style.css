@@ -2,7 +2,7 @@ html,
 body {
   box-sizing: border-box;
   font-family: Lato, sans-serif;
-  height: 800px;
+  height: 100vh;
   padding: 0;
   margin: 0;
 }
@@ -26,7 +26,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 50px 0px;
+  padding: 10px 0px;
 }
 
 
@@ -49,12 +49,12 @@ body {
 
 #optionContainer {
   width: 500px;
-  height: 400px;
+  height: 300px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  margin: 50px 0 20px 0;
+  margin: 40px 0 40px 0;
 }
 
 .option-container {
@@ -74,7 +74,7 @@ body {
 
 .option {
   position: absolute;
-  top: 35%;
+  top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
   border: none;
@@ -134,5 +134,5 @@ body {
 }
 
 .pressed {
-  top:  45%;
+  top:  46%;
 }
