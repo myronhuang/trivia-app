@@ -1,5 +1,4 @@
 //variables
-
 const URL = "https://opentdb.com/api.php?amount=1";
 
 let question = document.getElementById("question");
@@ -51,8 +50,8 @@ function getNextQuestion() {
     option_containers[i].classList.remove("correct");
     option_containers[i].classList.add("hidden");
   }
-
   getQA();
+
 }
 
 function getQA() {
@@ -96,7 +95,7 @@ function setupOptions() {
   for(var i = 0; i < options.length; i++) {
     option_containers[i].addEventListener("click", function(){
       //chosen answer is the option that the user clicks on
-      let chosenAnswer = this.innerText;
+      let chosenAnswer = this.children[1].innerHTML;
 
       console.log(chosenAnswer); //for debugging
 
@@ -111,7 +110,7 @@ function setupOptions() {
         //if answer is correct, disable all of the incorrect answers by adding an incorrect class
         option_containers.forEach(option => {
 
-          if(option.innerText !== correctAnswer) {
+          if(option.innerHTML !== correctAnswer) {
             option.classList.add('incorrect');
           }
         });
